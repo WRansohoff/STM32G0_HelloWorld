@@ -16,12 +16,15 @@
 #endif
 
 // Global defines.
+// (LED pin depends on your board)
 #ifdef VVC_F1
   #define PoLED   (GPIOB)
   #define PiLED   (12)
 #elif  VVC_G0
-  #define PoLED   (GPIOC)
-  #define PiLED   (6)
+  //#define PoLED   (GPIOC)
+  //#define PiLED   (6)
+  #define PoLED   (GPIOA)
+  #define PiLED   (8)
 #else
   #define PoLED   (GPIOB)
   #define PiLED   (3)
